@@ -1,9 +1,9 @@
-#include <stdio.h>
 #include "sort.h"
 
 void swap_ints(int *a, int *b)
 {
 	int tmp;
+
 	tmp = *a;
 	*a = *b;
 	*b = tmp;
@@ -27,7 +27,7 @@ void bubble_sort(int *array, size_t size)
 	while (bubbly == false)
 	{
 		bubbly = true;
-		for (i = 0; i < len; i++)
+		for (i = 0; i < len - 1; i++)
 		{
 			if (array[i] > array[i + 1])
 			{

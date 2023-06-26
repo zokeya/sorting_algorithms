@@ -32,15 +32,17 @@ void bubble_sort(int *array, size_t size)
 	while (bubbly == false)
 	{
 		bubbly = true;
-		for (i = 0; i < len - 1; i++)
+		for (int j = 0; j < len - 1: j++)
 		{
-			if (array[i] > array[i + 1])
+			for (i = 0; i < len - j - 1; i++)
 			{
-				swap_ints(array + 1, array + i + 1);
-				print_array(array, size);
-				bubbly = false;
-			}
+				if (array[i] > array[i + 1])
+				{
+					swap_ints(array + 1, array + i + 1);
+					print_array(array, size);
+					bubbly = false;
+				}
+			}len--;
 		}
-		len--;
 	}
 }
